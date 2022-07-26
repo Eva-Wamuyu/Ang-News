@@ -1,0 +1,11 @@
+.grid a{
+    background-color: #15425F;
+    color: #ffffff;
+    padding: 4vw;
+    border-radius: 8px;
+}
+.grid a:hover{
+    color: #15425F;
+    background-color: #ffffff;
+    
+}

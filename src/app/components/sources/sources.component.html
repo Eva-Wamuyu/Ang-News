@@ -1,0 +1,15 @@
+<div class="lg:container lg:mx-auto px-1.5">
+    <app-nav-bar [title]="title"></app-nav-bar>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-2" >
+<a *ngFor="let source of sources['sources']" routerLink="/articles/{{source.id}}">
+<div>
+<h2>{{source.name}}</h2>
+<p> 
+    {{source.description|truncate}}
+</p>
+</div>
+</a>
+
+</div>
+
+</div>
