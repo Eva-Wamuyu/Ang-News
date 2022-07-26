@@ -2,7 +2,8 @@
   background-color: #ffffff;
   color: #15425F;
   border-radius: 10px;
-  padding: 8px;
+  padding: 4vw;
+
 }
 .grid div:hover{
   color: #ffffff;

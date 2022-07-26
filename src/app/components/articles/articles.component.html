@@ -1,6 +1,8 @@
 <div class="lg:container lg:mx-auto px-1.5">
     <app-nav-bar [title]="title"></app-nav-bar>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4" >
+
+<button goBack><i class="fa fa-arrow-left" aria-hidden="true"></i>Back</button>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 my-4" >
 <a *ngFor="let article of articles['articles']"  target="_blank" href="{{article.url}}">
     <img class="rounded-lg" src="{{article.urlToImage}}" alt="{{article.title}}">
 
@@ -11,7 +13,7 @@
     </span>
     <span>
         <i class="fa fa-user" aria-hidden="true"></i>
-        {{article.author}}
+        {{article.author | slice:0:15}}
     </span>
 </p>
 <p>

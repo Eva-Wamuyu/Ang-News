@@ -1,4 +1,3 @@
-import { HttpResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttprequestsService } from 'src/app/models_and_services/httprequests.service';
@@ -28,7 +27,7 @@ export class ArticlesComponent implements OnInit {
     this.httpreq.getArticles(this.source).subscribe(
       (data)=>{
        this.articles = data;
-       console.log(this.articles);
+       
        return this.articles;
       }
     ),(err:any) =>{
@@ -37,4 +36,6 @@ export class ArticlesComponent implements OnInit {
    
 
 }
+
+
 }

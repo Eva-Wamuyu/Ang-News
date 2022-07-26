@@ -10,6 +10,7 @@ import { CategoriesComponent } from './components/categories/categories.componen
 import { NotfounfComponent } from './components/notfounf/notfounf.component';
 
 import { TruncatePipe } from './Pipes_and_directives/truncate.pipe';
+import { GoBackDirective } from './Pipes_and_directives/goBack.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { TruncatePipe } from './Pipes_and_directives/truncate.pipe';
     ArticlesComponent,
     CategoriesComponent,
     NotfounfComponent,
-    TruncatePipe
+    TruncatePipe,
+    GoBackDirective
   ],
   imports: [
     BrowserModule,
