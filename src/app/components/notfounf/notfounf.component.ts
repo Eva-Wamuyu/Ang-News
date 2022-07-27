@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class NotfounfComponent implements OnInit {
 
   constructor() { }
-
+  title: any;
   ngOnInit(): void {
+    this.title = "404 Not Found"
   }
 
 }

@@ -24,10 +24,10 @@ export class ArticlesComponent implements OnInit {
 
   getArticles = ()=> {
     
-    this.httpreq.getArticles(this.source).subscribe(
+    this.httpreq.getSources(this.source).subscribe(
       (data)=>{
        this.articles = data;
-       
+       console.log(this.articles)
        return this.articles;
       }
     ),(err:any) =>{

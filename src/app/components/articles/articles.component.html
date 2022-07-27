@@ -4,7 +4,7 @@
 <button goBack><i class="fa fa-arrow-left" aria-hidden="true"></i>Back</button>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 my-4" >
 <a *ngFor="let article of articles['articles']"  target="_blank" href="{{article.url}}">
-    <img class="rounded-lg" src="{{article.urlToImage}}" alt="{{article.title}}">
+    <img class="rounded-lg" src="{{article.image}}" alt="{{article.title}}">
 
 <p class="flex justify-between">
     <span>
@@ -13,11 +13,11 @@
     </span>
     <span>
         <i class="fa fa-user" aria-hidden="true"></i>
-        {{article.author | slice:0:15}}
+        {{article['source'].name | slice:0:15}}
     </span>
 </p>
 <p>
-    {{article.description}}
+    {{article.description|truncate}}
 </p>
   
 </a>

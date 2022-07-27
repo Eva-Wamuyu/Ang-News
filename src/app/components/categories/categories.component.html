@@ -3,45 +3,56 @@
 
 
     <h3 class="text-center my-4">
-        Get News Sources Based on the categories below:
+        Get News Articles Based on the categories below:
     </h3>
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-2 justify-center">
 
-<a [routerLink]="['/sources/business']"   >
+    <a [routerLink]="['/articles/breaking-news']">
+        Breaking News
+    </a>
 
-        Business Sources
+<a [routerLink]="['/articles/business']"   >
+
+        Business Articles
   
 </a>
 
 
-    <a [routerLink]="['/sources/entertainment']" >
-    Entertainment Sources
+    <a [routerLink]="['/articles/entertainment']" >
+    Entertainment Articles
     </a>
 
 
-    <a [routerLink]="['/sources/general']">
-    General Sources
+    <a [routerLink]="['/articles/general']">
+    General Articles
     </a>
 
 
-    <a [routerLink]="['/sources/health']">
-    Health Sources
+    <a [routerLink]="['/articles/health']">
+    Health Articles
     </a>
 
 
-    <a [routerLink]="['/sources/science']">
-    Science Sources
+    <a [routerLink]="['/articles/science']">
+    Science Articles
     </a>
 
 
-    <a [routerLink]="['/sources/sports']">
-    Sports Sources
+    <a [routerLink]="['/articles/sports']">
+    Sports Articles
     </a>
 
 
-    <a [routerLink]="['/sources/technology']">
-    Technology
+    <a [routerLink]="['/articles/technology']">
+    Technology News
+    </a>
+
+    <a [routerLink]="['/articles/world']">
+        World News
+    </a>
+    <a [routerLink]="['/articles/nation']">
+        National News
     </a>
 
 </div>
