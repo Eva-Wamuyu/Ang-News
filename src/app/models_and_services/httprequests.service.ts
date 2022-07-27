@@ -11,7 +11,9 @@ export class HttprequestsService {
 
   constructor(private http: HttpClient) { }
 
-  BASE_URL = "https://newsapi.org/v2/top-headlines"
+  BASE_URL1 = "https://newsapi.org/v2/top-headlines"
+  PROXY_URL = "https://cors-anywhere.herokuapp.com/"
+  BASE_URL = this.PROXY_URL +this.BASE_URL1
   API_KEY =  environment.API
  
   getSources(category:string):Observable<Source[]>{
