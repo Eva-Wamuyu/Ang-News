@@ -1,5 +1,11 @@
 # Taarifa
+## Ang-News
 
+## Installation
+
+On cloning and installing dependencies:
+create an environment folder in the path /src/environments/environments.ts.
+Add your api key
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
 
 ## Development server
