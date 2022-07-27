@@ -27,7 +27,7 @@ export class ArticlesComponent implements OnInit {
     this.httpreq.getSources(this.source).subscribe(
       (data)=>{
        this.articles = data;
-       console.log(this.articles)
+       
        return this.articles;
       }
     ),(err:any) =>{
