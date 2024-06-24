@@ -1,11 +1,38 @@
-.grid a{
-    background-color: #15425F;
-    color: #ffffff;
-    padding: 4vw;
+.image-container {
+    position: relative;
+    overflow: hidden;
     border-radius: 8px;
+    height: 200px; 
+    background-color: #f0f0f0; 
 }
-.grid a:hover{
-    color: #15425F;
-    background-color: #ffffff;
-    
+
+.category-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    text-align: center;
+    box-sizing: border-box; 
+    transition: opacity 0.3s ease;
+}
+
+.category-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.category-link:hover .category-image {
+    transform: scale(1.1);
 }

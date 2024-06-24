@@ -1,60 +1,19 @@
 <div class="container">
 <app-nav-bar [title]="title"></app-nav-bar>
+<h3 class="text-center my-4">
+    Get News Articles Based on the categories below:
+</h3>
+    <div class="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-4 gap-4 mt-2 justify-center">
+        <ng-container *ngFor="let category of categories">
+            <a [routerLink]="['/articles', category.path]" class="category-link">
+                <div class="image-container">
+                    <img [src]="category.icon" alt="Category Image" class="category-image">
+                    <div class="overlay-text">
+                        {{ category.label }}
+                    </div>
+                </div>
+            </a>
+        </ng-container>
+    </div>    
 
-
-    <h3 class="text-center my-4">
-        Get News Articles Based on the categories below:
-    </h3>
-
-<div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-2 justify-center">
-
-    <a [routerLink]="['/articles/breaking-news']">
-        Breaking News
-    </a>
-
-<a [routerLink]="['/articles/business']"   >
-        Business Articles
-        <i class="fas fa-chart-area"></i>
-        <i class="fa-solid fa-chart-area"></i>
-  
-</a>
-
-
-    <a [routerLink]="['/articles/entertainment']" >
-    Entertainment Articles
-    </a>
-
-
-    <a [routerLink]="['/articles/general']">
-    General Articles
-    </a>
-
-
-    <a [routerLink]="['/articles/health']">
-    Health Articles
-    </a>
-
-
-    <a [routerLink]="['/articles/science']">
-    Science Articles
-    </a>
-
-
-    <a [routerLink]="['/articles/sports']">
-    Sports Articles
-    </a>
-
-
-    <a [routerLink]="['/articles/technology']">
-    Technology News
-    </a>
-
-    <a [routerLink]="['/articles/world']">
-        World News
-    </a>
-    <a [routerLink]="['/articles/nation']">
-        National News
-    </a>
-
-</div>
 </div>
