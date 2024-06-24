@@ -15,7 +15,7 @@ export class TruncatePipe implements PipeTransform {
     }
     else if(value.length>70){
       
-      return value.slice(0,70)+"...";
+      return value.slice(0,90)+"...";
     }
     else{
       
