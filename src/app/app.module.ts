@@ -7,6 +7,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { ArticlesComponent } from './components/articles/articles.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { NotfounfComponent } from './components/notfounf/notfounf.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 import { TruncatePipe } from './Pipes_and_directives/truncate.pipe';
 import { GoBackDirective } from './Pipes_and_directives/goBack.directive';
@@ -17,8 +18,10 @@ import { GoBackDirective } from './Pipes_and_directives/goBack.directive';
     ArticlesComponent,
     CategoriesComponent,
     NotfounfComponent,
+    LoaderComponent,
+
     TruncatePipe,
-    GoBackDirective
+    GoBackDirective,
   ],
   imports: [
     BrowserModule,
