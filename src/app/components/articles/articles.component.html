@@ -2,8 +2,9 @@
     <app-nav-bar [title]="title"></app-nav-bar>
 
 <button goBack><i class="fa fa-arrow-left" aria-hidden="true"></i>Back</button>
+<ng-template #notLoading>
 <div class="articles-container flex flex-wrap justify-between">
-    <a *ngFor="let article of articles['articles']" target="_blank" href="{{article.url}}" class="article-container w-full sm:w-1/2 md:w-1/3 p-2">
+    <a *ngFor="let article of articles" target="_blank" href="{{article.url}}" class="article-container w-full sm:w-1/2 md:w-1/3 p-2">
       <div class="flex flex-col h-full md:border border-gray-300 rounded-lg overflow-hidden">
         <div class="relative w-full h-64">
           <img class="absolute top-0 left-0 w-full h-full object-cover" src="{{article.image}}" alt="{{article.title}}">
@@ -16,7 +17,7 @@
             </span>
             <span class="flex items-center">
               <i class="fa fa-user mr-1" aria-hidden="true"></i>
-              {{article['source'].name | slice:0:15}}
+              {{article['source']?.name | slice:0:15}}
             </span>
           </p>
           <h2 class="text-bold text-gray-900 text-lg font-semibold mb-2">
@@ -43,10 +44,11 @@
     </div>
   </div>
 </div>
+</ng-template>
 
 
 
-<div *ngIf="loading">
+<div *ngIf="loading else notLoading">
   <app-loader></app-loader>
 </div>
 
