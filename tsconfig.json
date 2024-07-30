@@ -21,12 +21,14 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "typeRoots": ["node_modules/@types"],
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "exclude": ["node_modules", "dist", "src/**/*.spec.ts", "src/**/*.spec.cy.ts"]
 }

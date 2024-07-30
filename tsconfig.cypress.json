@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/cypress",
+    "types": ["cypress"]
+  },
+  "include": ["src/**/*.spec.cy.ts"],
+  "exclude": ["src/**/*.spec.ts"]
+
+}
